@@ -7,11 +7,22 @@ import BadgeForm from '../components/BadgeForm';
 import Navbar from '../components/Navbar';
 
 class BadgeNew extends React.Component {
-  state = {form: {}};
+  state = {
+    form: {
+      firstName: '',
+      lastName: '',
+      email: '',
+      jobTitle: '',
+      twitter: '',
+    },
+  };
 
   handleChange = (eKey) => {
+    // const nextForm = this.state.form;
+    // nextForm[eKey.target.name] = eKey.target.value;
     this.setState({
       form: {
+        ...this.state.form,
         [eKey.target.name]: eKey.target.value,
       },
     });
@@ -30,15 +41,17 @@ class BadgeNew extends React.Component {
           <div className='row'>
             <div className='col-6'>
               <Badge
-                nick='anbreaker'
-                web='rootdevs.es'
+                nick={this.state.form.firstName}
+                web={this.state.form.web}
+                avatarUrl={this.state.form.avatarUrl}
+                jobTitle={this.state.form.jobTitle}
+                email={this.state.form.email}
+                twitter={this.state.form.twitter}
                 avatarUrl='https://s.gravatar.com/avatar/315358dc3891fc64420dd02b9faf0287?s=80'
-                jobTitle='Student Frontend'
-                twitter='antunez19'
               />
             </div>
             <div className='col-6'>
-              <BadgeForm onChange={this.handleChange} />
+              <BadgeForm onChange={this.handleChange} formValues={this.state.form} />
             </div>
           </div>
         </div>
