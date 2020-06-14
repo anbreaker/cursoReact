@@ -1,0 +1,9 @@
+.PageLoading {
+  display: flex;
+  flex-direction: column;
+  font-size: 85px;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+}
