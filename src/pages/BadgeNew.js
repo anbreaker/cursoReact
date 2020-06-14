@@ -34,7 +34,7 @@ class BadgeNew extends React.Component {
           <img className='img-fluid' src={header} alt='logo' />
         </div>
 
-        <div className='contar'>
+        <div className='container'>
           <div className='row'>
             <div className='col-6'>
               <Badge
