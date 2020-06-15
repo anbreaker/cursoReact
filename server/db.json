@@ -523,6 +523,7 @@
       "twitter": "fmvilas",
       "avatarUrl": "https://www.gravatar.com/avatar/f3bad9b06a1b0512c5c837f28dddd985?d=identicon",
       "id": "rJE_8dA"
+<<<<<<< HEAD
     },
     {
       "firstName": "Francisco Javier",
@@ -586,6 +587,8 @@
       "twitter": "Snoopy",
       "avatarUrl": "https://www.gravatar.com/avatar/80b588e690cbd0f8a91e53ca98683dad?d=identicon",
       "id": "IqKnk6F"
+=======
+>>>>>>> 4b4bbc81823b2954ad17b7b9e341ed700aceb258
     }
   ]
 }
